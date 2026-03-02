@@ -350,10 +350,13 @@ export default function ProjectDetailPage() {
 
   // Poll analysis progress
   useEffect(() => {
-    if (analysisId && analyzing) {
+    if (analyzing) {
       pollRef.current = setInterval(async () => {
         try {
-          const progress = await getAnalysisProgress(projectId, analysisId);
+          // Use specific analysis endpoint if we have an ID, otherwise use latest
+          const progress = analysisId
+            ? await getAnalysisProgress(projectId, analysisId)
+            : await getLatestAnalysis(projectId);
           setAnalysis(progress);
           if (progress.status === "completed" || progress.status === "failed") {
             setAnalyzing(false);
