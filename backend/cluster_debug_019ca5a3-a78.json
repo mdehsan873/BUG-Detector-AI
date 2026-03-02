@@ -1,0 +1,297 @@
+[
+  {
+    "cluster_id": "cluster_019ca5a3_0",
+    "cluster_type": "console_error",
+    "center_ts": "2026-02-28T19:09:44.599000+00:00",
+    "page_url": "https://dashboard.scrapegraphai.com/",
+    "trigger_count": 1,
+    "event_count": 1,
+    "dom_snapshot_count": 1,
+    "dom_diff_count": 0,
+    "console_logs": [
+      {
+        "timestamp": "2026-02-28T19:09:44.599000+00:00",
+        "error_type": "ConsoleError",
+        "message": "\"Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.\"",
+        "page": "https://dashboard.scrapegraphai.com/"
+      }
+    ],
+    "network_errors": [],
+    "user_actions": [],
+    "other_events": [],
+    "dom_snapshots": [
+      {
+        "timestamp": "2026-02-28T19:10:09.945000+00:00",
+        "page": "https://dashboard.scrapegraphai.com/",
+        "dom_md": "[HIDDEN:aria] [ASIDE]\n[LINK: [IMG: ScrapeGraphAI] [HIDDEN:opacity-0] ScrapeGraphAI \u2192 https://dashboard.scrapegraphai.com/] [BUTTON: Default project]\n[NAV]\n[LINK: [BUTTON: Playground] \u2192 https://dashboard.scrapegraphai.com/] [LINK: [BUTTON: Dashboard] \u2192 https://dashboard.scrapegraphai.com/dashboard/] [LINK: [BUTTON: History] \u2192 https://dashboard.scrapegraphai.com/history/] [LINK: [BUTTON: Use Cases] \u2192 https://dashboard.scrapegraphai.com/use-cases/] [LINK: [BUTTON: Billing] \u2192 https://dashboard.scrapegraphai.com/billing/] [LINK: [BUTTON: Agentic Scraper Beta] \u2192 https://dashboard.scrapegraphai.com/agentic-scraper/] [LINK: [BUTTON: Documentation] \u2192 https://docs.scrapegraphai.com/introduction] [LINK: [BUTTON: MCP Server] \u2192 https://docs.scrapegraphai.com/services/mcp-server]\n[/NAV]\n [BUTTON (button): HA hallhoffarth hallhoffarth@gmail.com] [LINK: [BUTTON: v3.2.1] \u2192 https://dashboard.scrapegraphai.com/changelog/]\n[/ASIDE]\n [MAIN]\n# Playground\n\nTest and experiment with ScrapeGraphAI API endpoints API Key: sgai-e62a81a3-8c45-46c3-865d-f94464a00f13 Remaining credits: 40 / 50 [BUTTON (button): Smart Smart Scraper] [BUTTON (button): Search Search Scraper] [BUTTON (button): Markdown Markdownify] [BUTTON (button): Scrape Scrape] [BUTTON (button): Crawler Smart Crawler] [BUTTON (button): Sitemap Sitemap] Extract structured data from a single webpage\n cost: 10 credits [TEXTAREA placeholder=\"https://example.com, https://example2.com, https://example3.com\"] [TEXTAREA placeholder=\"Describe what you want to extract...\"] [BUTTON: Advanced Options] [BUTTON: Get code] [BUTTON: Create Schema] [BUTTON: Start scraping \u2318 + Enter] ScrapeGraphAI Terminal [BUTTON: Feedback?] $ SmartScraper completed successfully > Request ID: e68ba38c-70a9-4351-bbc9-92cc1d904ba8 > Result: { \"instrument_name\": \"Manulife Strategic Income Fund Series F\", \"symbol\": \"MMF659.CF\", \"currency\": \"CAD\", \"nav_price\": 11.3848, \"open_price\": 11.3848, \"five_day_low\": 11.3794, \"five_day_high\": 11.3895, \"source\": \"The Globe and Mail\", \"note\": \"Nav price information not found in the provided content.\" } \u258a\n[/MAIN] [LINK: Book a Call \u2192 https://calendly.com/lorenzo-padoan-scrapegraphai/30min] [BUTTON: Upgrade] [BUTTON: Toggle theme] ## Code Examples [BUTTON (button): Python] [BUTTON (button): JavaScript] [BUTTON (button): cURL] [BUTTON: Copy] 1 import { Client } from 'scrapegraph-js' ; 2 3 // Initialize the client 4 const client = new Client ( { apiKey : 'sgai-e62a81a3-8c45-46c3-865d-f94464a00f13' } ) ; 5 6 // SmartScraper request 7 try { 8 const response = await client . smartScraper ( { 9 websiteUrl : \"https://www.theglobeandmail.com/investing/markets/funds/MMF659.CF/\" , 10 userPrompt : \"Nav price\" 11 } ) ; 12 13 console . log ( 'Result:' , response ) ; 14 } catch ( error ) { 15 console . error ( 'Error:' , error ) ; 16 } This code uses your current form values and API key. Make sure to keep your API key secure and never commit it to version control.\n Official SDKs: [LINK: Python \u2192 https://github.com/ScrapeGraphAI/scrapegraph-py] [LINK: JavaScript \u2192 https://github.com/ScrapeGraphAI/scrapegraph-js] [LINK: Documentation \u2192 https://docs.scrapegraphai.com/introduction] [BUTTON (button): Close]"
+      }
+    ],
+    "dom_diffs": [],
+    "ai_context_sent": "USER STEPS BEFORE INCIDENT:\n  1. User navigated to /\n  2. User navigated to /login/\n  3. User left /login/\n  4. User navigated to /auth/callback/\n  5. User navigated to /onboarding/\n  6. User navigated to /\n\nINCIDENT WINDOW on https://dashboard.scrapegraphai.com/:\n\n  [+0.0s] JS_ERROR: ConsoleError: \"Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.\"\n\nDOM STATE (nearest snapshot, ~25.3s from incident):\n[HIDDEN:aria] [ASIDE]\n[LINK: [IMG: ScrapeGraphAI] [HIDDEN:opacity-0] ScrapeGraphAI \u2192 https://dashboard.scrapegraphai.com/] [BUTTON: Default project]\n[NAV]\n[LINK: [BUTTON: Playground] \u2192 https://dashboard.scrapegraphai.com/] [LINK: [BUTTON: Dashboard] \u2192 https://dashboard.scrapegraphai.com/dashboard/] [LINK: [BUTTON: History] \u2192 https://dashboard.scrapegraphai.com/history/] [LINK: [BUTTON: Use Cases] \u2192 https://dashboard.scrapegraphai.com/use-cases/] [LINK: [BUTTON: Billing] \u2192 https://dashboard.scrapegraphai.com/billing/] [LINK: [BUTTON: Agentic Scraper Beta] \u2192 https://dashboard.scrapegraphai.com/agentic-scraper/] [LINK: [BUTTON: Documentation] \u2192 https://docs.scrapegraphai.com/introduction] [LINK: [BUTTON: MCP Server] \u2192 https://docs.scrapegraphai.com/services/mcp-server]\n[/NAV]\n [BUTTON (button): HA hallhoffarth hallhoffarth@gmail.com] [LINK: [BUTTON: v3.2.1] \u2192 https://dashboard.scrapegraphai.com/changelog/]\n[/ASIDE]\n [MAIN]\n# Playground\n\nTest and experiment with ScrapeGraphAI API endpoints API Key: sgai-e62a81a3-8c45-46c3-865d-f94464a00f13 Remaining credits: 40 / 50 [BUTTON (button): Smart Smart Scraper] [BUTTON (button): Search Search Scraper] [BUTTON (button): Markdown Markdownify] [BUTTON (button): Scrape Scrape] [BUTTON (button): Crawler Smart Crawler] [BUTTON (button): Sitemap Sitemap] Extract structured data from a single webpage\n cost: 10 credits [TEXTAREA placeholder=\"https://example.com, https://example2.com, https://example3.com\"] [TEXTAREA placeholder=\"Describe what you want to extract...\"] [BUTTON: Advanced Options] [BUTTON: Get code] [BUTTON: Create Schema] [BUTTON: Start scraping \u2318 + Enter] ScrapeGraphAI Terminal [BUTTON: Feedback?] $ SmartScraper completed successfully > Request ID: e68ba38c-70a9-4351-bbc9-92cc1d904ba8 > Result: { \"instrument_name\": \"Manulife Strategic Income Fund Series F\", \"symbol\": \"MMF659.CF\", \"currency\": \"CAD\", \"nav_price\": 11.3848, \"open_price\": 11.3848, \"five_day_low\": 11.3794, \"five_day_high\": 11.3895, \"source\": \"The Globe and Mail\", \"note\": \"Nav price information not found in the provided content.\" } \u258a\n[/MAIN] [LINK: Book a Call \u2192 https://calendly.com/lorenzo-padoan-scrapegraphai/30min] [BUTTON: Upgrade] [BUTTON: Toggle theme] ## Code Examples [BUTTON (button): Python] [BUTTON (button): JavaScript] [BUTTON (button): cURL] [BUTTON: Copy] 1 import { Client } from 'scrapegraph-js' ; 2 3 // Initialize the client 4 const client = new Client ( { apiKey : 'sgai-e62a81a3-8c45-46c3-865d-f94464a00f13' } ) ; 5 6 // SmartScraper request 7 try { 8 const response = await client . smartScraper ( { 9 websiteUrl : \"https://www.theglobeandmail.com/investing/markets/funds/MMF659.CF/\" , 10 userPrompt : \"Nav price\" 11 } ) ; 12 13 console . log ( 'Result:' , response ) ; 14 } catch ( error ) { 15 console . error ( 'Error:' , error ) ; 16 } This code uses your current form values and API key. Make sure to keep your API key secure and never commit it to version control.\n Official SDKs: [LINK: Python \u2192 https://github.com/ScrapeGraphAI/scrapegraph-py] [LINK: JavaScript \u2192 https://github.com/ScrapeGraphAI/scrapegraph-js] [LINK: Documentation \u2192 https://docs.scrapegraphai.com/introduction] [BUTTON (button): Close]\n"
+  },
+  {
+    "cluster_id": "cluster_019ca5a3_1",
+    "cluster_type": "console_error",
+    "center_ts": "2026-02-28T19:22:23.894000+00:00",
+    "page_url": "https://dashboard.scrapegraphai.com/",
+    "trigger_count": 1,
+    "event_count": 1,
+    "dom_snapshot_count": 1,
+    "dom_diff_count": 0,
+    "console_logs": [
+      {
+        "timestamp": "2026-02-28T19:22:23.894000+00:00",
+        "error_type": "ConsoleError",
+        "message": "\"Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.\"",
+        "page": "https://dashboard.scrapegraphai.com/"
+      }
+    ],
+    "network_errors": [],
+    "user_actions": [],
+    "other_events": [],
+    "dom_snapshots": [
+      {
+        "timestamp": "2026-02-28T19:24:00.389000+00:00",
+        "page": "https://dashboard.scrapegraphai.com/",
+        "dom_md": "## Dynamic changes on page\n\n[data-radix-scroll-area-viewport] { scrollbar-width: none; }[data-radix-scroll-area-viewport]::-webkit-scrollbar { display: none; }\n[data-radix-scroll-area-viewport] { scrollbar-width: none; }[data-radix-scroll-area-viewport]::-webkit-scrollbar { display: none; }\n[data-radix-scroll-area-viewport] { scrollbar-width: none; }[data-radix-scroll-area-viewport]::-webkit-scrollbar { display: none; }\n[data-radix-scroll-area-viewport] { scrollbar-width: none; }[data-radix-scroll-area-viewport]::-webkit-scrollbar { display: none; }\n[data-radix-scroll-area-viewport] { scrollbar-width: none; }[data-radix-scroll-area-viewport]::-webkit-scrollbar { display: none; }"
+      }
+    ],
+    "dom_diffs": [],
+    "ai_context_sent": "USER STEPS BEFORE INCIDENT:\n  1. User navigated to /\n  2. User navigated to /login/\n  3. User left /login/\n  4. User navigated to /auth/callback/\n  5. User navigated to /onboarding/\n  6. User navigated to /\n\nINCIDENT WINDOW on https://dashboard.scrapegraphai.com/:\n\n  [+0.0s] JS_ERROR: ConsoleError: \"Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.\"\n\nDOM STATE (nearest snapshot, ~96.5s from incident):\n## Dynamic changes on page\n\n[data-radix-scroll-area-viewport] { scrollbar-width: none; }[data-radix-scroll-area-viewport]::-webkit-scrollbar { display: none; }\n[data-radix-scroll-area-viewport] { scrollbar-width: none; }[data-radix-scroll-area-viewport]::-webkit-scrollbar { display: none; }\n[data-radix-scroll-area-viewport] { scrollbar-width: none; }[data-radix-scroll-area-viewport]::-webkit-scrollbar { display: none; }\n[data-radix-scroll-area-viewport] { scrollbar-width: none; }[data-radix-scroll-area-viewport]::-webkit-scrollbar { display: none; }\n[data-radix-scroll-area-viewport] { scrollbar-width: none; }[data-radix-scroll-area-viewport]::-webkit-scrollbar { display: none; }\n"
+  },
+  {
+    "cluster_id": "cluster_019ca5a3_2",
+    "cluster_type": "console_error",
+    "center_ts": "2026-02-28T19:23:42.410000+00:00",
+    "page_url": "https://dashboard.scrapegraphai.com/",
+    "trigger_count": 1,
+    "event_count": 1,
+    "dom_snapshot_count": 1,
+    "dom_diff_count": 0,
+    "console_logs": [
+      {
+        "timestamp": "2026-02-28T19:23:42.410000+00:00",
+        "error_type": "ConsoleError",
+        "message": "\"Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.\"",
+        "page": "https://dashboard.scrapegraphai.com/"
+      }
+    ],
+    "network_errors": [],
+    "user_actions": [],
+    "other_events": [],
+    "dom_snapshots": [
+      {
+        "timestamp": "2026-02-28T19:24:00.389000+00:00",
+        "page": "https://dashboard.scrapegraphai.com/",
+        "dom_md": "## Dynamic changes on page\n\n[data-radix-scroll-area-viewport] { scrollbar-width: none; }[data-radix-scroll-area-viewport]::-webkit-scrollbar { display: none; }\n[data-radix-scroll-area-viewport] { scrollbar-width: none; }[data-radix-scroll-area-viewport]::-webkit-scrollbar { display: none; }\n[data-radix-scroll-area-viewport] { scrollbar-width: none; }[data-radix-scroll-area-viewport]::-webkit-scrollbar { display: none; }\n[data-radix-scroll-area-viewport] { scrollbar-width: none; }[data-radix-scroll-area-viewport]::-webkit-scrollbar { display: none; }\n[data-radix-scroll-area-viewport] { scrollbar-width: none; }[data-radix-scroll-area-viewport]::-webkit-scrollbar { display: none; }"
+      }
+    ],
+    "dom_diffs": [],
+    "ai_context_sent": "USER STEPS BEFORE INCIDENT:\n  1. User navigated to /\n  2. User navigated to /login/\n  3. User left /login/\n  4. User navigated to /auth/callback/\n  5. User navigated to /onboarding/\n  6. User navigated to /\n\nINCIDENT WINDOW on https://dashboard.scrapegraphai.com/:\n\n  [+0.0s] JS_ERROR: ConsoleError: \"Warning: Missing `Description` or `aria-describedby={undefined}` for {DialogContent}.\"\n\nDOM STATE (nearest snapshot, ~18.0s from incident):\n## Dynamic changes on page\n\n[data-radix-scroll-area-viewport] { scrollbar-width: none; }[data-radix-scroll-area-viewport]::-webkit-scrollbar { display: none; }\n[data-radix-scroll-area-viewport] { scrollbar-width: none; }[data-radix-scroll-area-viewport]::-webkit-scrollbar { display: none; }\n[data-radix-scroll-area-viewport] { scrollbar-width: none; }[data-radix-scroll-area-viewport]::-webkit-scrollbar { display: none; }\n[data-radix-scroll-area-viewport] { scrollbar-width: none; }[data-radix-scroll-area-viewport]::-webkit-scrollbar { display: none; }\n[data-radix-scroll-area-viewport] { scrollbar-width: none; }[data-radix-scroll-area-viewport]::-webkit-scrollbar { display: none; }\n"
+  },
+  {
+    "cluster_id": "cluster_019ca5a3_3",
+    "cluster_type": "mixed",
+    "center_ts": "2026-02-28T19:32:50.022000+00:00",
+    "page_url": "https://dashboard.scrapegraphai.com/settings/",
+    "trigger_count": 3,
+    "event_count": 3,
+    "dom_snapshot_count": 1,
+    "dom_diff_count": 0,
+    "console_logs": [
+      {
+        "timestamp": "2026-02-28T19:32:52.299000+00:00",
+        "error_type": "ConsoleError",
+        "message": "\"Error deleting account:\" \"Error: Request failed\\n    at https://dashboard.scrapegraphai.com/_next/static/chunks/1024-9cc76d24f3729b9b.js:1:2441\\n    at async tn.request (https://dashboard.scrapegraphai.com/_next/static/chunks/8655-3b427166988a955e.js:1:29732)\\n    at async l (https://dashboard.scra",
+        "page": "https://dashboard.scrapegraphai.com/settings/"
+      },
+      {
+        "timestamp": "2026-02-28T19:32:52.299000+00:00",
+        "error_type": "ConsoleError",
+        "message": "\"Delete account failed:\" \"Error: Request failed\\n    at https://dashboard.scrapegraphai.com/_next/static/chunks/1024-9cc76d24f3729b9b.js:1:2441\\n    at async tn.request (https://dashboard.scrapegraphai.com/_next/static/chunks/8655-3b427166988a955e.js:1:29732)\\n    at async l (https://dashboard.scrap",
+        "page": "https://dashboard.scrapegraphai.com/settings/"
+      }
+    ],
+    "network_errors": [
+      {
+        "timestamp": "2026-02-28T19:32:50.022000+00:00",
+        "method": "POST",
+        "endpoint": "https://sgai-saas-backend.onrender.com/v1/delete-account",
+        "status_code": 500,
+        "page": "https://dashboard.scrapegraphai.com/settings/"
+      }
+    ],
+    "user_actions": [],
+    "other_events": [],
+    "dom_snapshots": [
+      {
+        "timestamp": "2026-02-28T19:33:24.767000+00:00",
+        "page": "https://dashboard.scrapegraphai.com/settings/",
+        "dom_md": "[ASIDE]\n[LINK: [IMG: ScrapeGraphAI] [HIDDEN:opacity-0] ScrapeGraphAI \u2192 https://dashboard.scrapegraphai.com/] [BUTTON: Default project]\n[NAV]\n[LINK: [BUTTON: Playground] \u2192 https://dashboard.scrapegraphai.com/] [LINK: [BUTTON: Dashboard] \u2192 https://dashboard.scrapegraphai.com/dashboard/] [LINK: [BUTTON: History] \u2192 https://dashboard.scrapegraphai.com/history/] [LINK: [BUTTON: Use Cases] \u2192 https://dashboard.scrapegraphai.com/use-cases/] [LINK: [BUTTON: Billing] \u2192 https://dashboard.scrapegraphai.com/billing/] [LINK: [BUTTON: Agentic Scraper Beta] \u2192 https://dashboard.scrapegraphai.com/agentic-scraper/] [LINK: [BUTTON: Documentation] \u2192 https://docs.scrapegraphai.com/introduction] [LINK: [BUTTON: MCP Server] \u2192 https://docs.scrapegraphai.com/services/mcp-server]\n[/NAV]\n [BUTTON (button): HA samggpv5oaw hallhoffarth@gmail.com] [LINK: [BUTTON: v3.2.1] \u2192 https://dashboard.scrapegraphai.com/changelog/]\n[/ASIDE]\n [MAIN]\n[HIDDEN:opacity-0] # Settings\n\nManage your account preferences and settings ### Profile\nUpdate your personal information SS [BUTTON: Upload Picture] [INPUT type=\"file\"] [LABEL for=\"firstName\"]: First Name [INPUT type=\"text\" name=\"firstName\" placeholder=\"Enter your first name\" value=\"Sam\"] [LABEL for=\"lastName\"]: Last Name [INPUT type=\"text\" name=\"lastName\" placeholder=\"Enter your last name\" value=\"Smith\"] [LABEL for=\"email\"]: Email [INPUT type=\"email\" name=\"email\" value=\"hallhoffarth@gmail.com\"]\nTo change your email, go to the Security section below [LABEL for=\"username\"]: Username [INPUT type=\"text\" name=\"username\" placeholder=\"Choose a unique username\" value=\"samggpv5oaw\"]\nChoose a unique username for your profile [DISABLED] [BUTTON (disabled): Update Profile] ### Security\nManage your account security and password ### Password\n\nUpdate your password to keep your account secure [LINK: [BUTTON: Reset Password] \u2192 https://dashboard.scrapegraphai.com/forgot-password/] ### Email\nChange your account email address [BUTTON (button): Change Email] ### Webhook Secret\nManage your webhook signing secret for verifying webhook payloads ### [BUTTON (button): Advanced settings]\n[/MAIN] [LINK: Book a Call \u2192 https://calendly.com/lorenzo-padoan-scrapegraphai/30min] [BUTTON: Upgrade] [BUTTON: Toggle theme]"
+      }
+    ],
+    "dom_diffs": [],
+    "ai_context_sent": "USER STEPS BEFORE INCIDENT:\n  1. User navigated to /\n  2. User navigated to /login/\n  3. User left /login/\n  4. User navigated to /auth/callback/\n  5. User navigated to /onboarding/\n  6. User navigated to /\n  7. User left /\n  8. User navigated to /\n  9. User navigated to /billing/\n  10. User navigated to /\n  11. User navigated to /settings/\n\nINCIDENT WINDOW on https://dashboard.scrapegraphai.com/settings/:\n\n  [+0.0s] NETWORK_ERROR: POST https://sgai-saas-backend.onrender.com/v1/delete-account \u2192 HTTP 500\n  [+2.3s] JS_ERROR: ConsoleError: \"Error deleting account:\" \"Error: Request failed\\n    at https://dashboard.scrapegraphai.com/_next/static/chunks/1024-9c\n  [+2.3s] JS_ERROR: ConsoleError: \"Delete account failed:\" \"Error: Request failed\\n    at https://dashboard.scrapegraphai.com/_next/static/chunks/1024-9cc\n\nDOM STATE (nearest snapshot, ~34.7s from incident):\n[ASIDE]\n[LINK: [IMG: ScrapeGraphAI] [HIDDEN:opacity-0] ScrapeGraphAI \u2192 https://dashboard.scrapegraphai.com/] [BUTTON: Default project]\n[NAV]\n[LINK: [BUTTON: Playground] \u2192 https://dashboard.scrapegraphai.com/] [LINK: [BUTTON: Dashboard] \u2192 https://dashboard.scrapegraphai.com/dashboard/] [LINK: [BUTTON: History] \u2192 https://dashboard.scrapegraphai.com/history/] [LINK: [BUTTON: Use Cases] \u2192 https://dashboard.scrapegraphai.com/use-cases/] [LINK: [BUTTON: Billing] \u2192 https://dashboard.scrapegraphai.com/billing/] [LINK: [BUTTON: Agentic Scraper Beta] \u2192 https://dashboard.scrapegraphai.com/agentic-scraper/] [LINK: [BUTTON: Documentation] \u2192 https://docs.scrapegraphai.com/introduction] [LINK: [BUTTON: MCP Server] \u2192 https://docs.scrapegraphai.com/services/mcp-server]\n[/NAV]\n [BUTTON (button): HA samggpv5oaw hallhoffarth@gmail.com] [LINK: [BUTTON: v3.2.1] \u2192 https://dashboard.scrapegraphai.com/changelog/]\n[/ASIDE]\n [MAIN]\n[HIDDEN:opacity-0] # Settings\n\nManage your account preferences and settings ### Profile\nUpdate your personal information SS [BUTTON: Upload Picture] [INPUT type=\"file\"] [LABEL for=\"firstName\"]: First Name [INPUT type=\"text\" name=\"firstName\" placeholder=\"Enter your first name\" value=\"Sam\"] [LABEL for=\"lastName\"]: Last Name [INPUT type=\"text\" name=\"lastName\" placeholder=\"Enter your last name\" value=\"Smith\"] [LABEL for=\"email\"]: Email [INPUT type=\"email\" name=\"email\" value=\"hallhoffarth@gmail.com\"]\nTo change your email, go to the Security section below [LABEL for=\"username\"]: Username [INPUT type=\"text\" name=\"username\" placeholder=\"Choose a unique username\" value=\"samggpv5oaw\"]\nChoose a unique username for your profile [DISABLED] [BUTTON (disabled): Update Profile] ### Security\nManage your account security and password ### Password\n\nUpdate your password to keep your account secure [LINK: [BUTTON: Reset Password] \u2192 https://dashboard.scrapegraphai.com/forgot-password/] ### Email\nChange your account email address [BUTTON (button): Change Email] ### Webhook Secret\nManage your webhook signing secret for verifying webhook payloads ### [BUTTON (button): Advanced settings]\n[/MAIN] [LINK: Book a Call \u2192 https://calendly.com/lorenzo-padoan-scrapegraphai/30min] [BUTTON: Upgrade] [BUTTON: Toggle theme]\n"
+  },
+  {
+    "cluster_id": "cluster_019ca5a3_4",
+    "cluster_type": "console_error",
+    "center_ts": "2026-02-28T19:33:23.940000+00:00",
+    "page_url": "https://dashboard.scrapegraphai.com/settings/",
+    "trigger_count": 5,
+    "event_count": 7,
+    "dom_snapshot_count": 2,
+    "dom_diff_count": 2,
+    "console_logs": [
+      {
+        "timestamp": "2026-02-28T19:33:23.940000+00:00",
+        "error_type": "ConsoleError",
+        "message": "\"[UsageStore] Database error:\" {\"code\":\"PGRST116\",\"details\":\"The result contains 0 rows\",\"hint\":null,\"message\":\"JSON object requested, multiple (or no) rows returned\"}",
+        "page": "https://dashboard.scrapegraphai.com/settings/"
+      },
+      {
+        "timestamp": "2026-02-28T19:33:24.614000+00:00",
+        "error_type": "ConsoleError",
+        "message": "\"[ProjectsStore] Error fetching projects:\" {\"code\":\"PGRST116\",\"details\":\"The result contains 0 rows\",\"hint\":null,\"message\":\"JSON object requested, multiple (or no) rows returned\"}",
+        "page": "https://dashboard.scrapegraphai.com/settings/"
+      },
+      {
+        "timestamp": "2026-02-28T19:33:24.819000+00:00",
+        "error_type": "ConsoleError",
+        "message": "\"Uncaught (in promise)\" {\"code\":\"PGRST116\",\"details\":\"The result contains 0 rows\",\"hint\":null,\"message\":\"JSON object requested, multiple (or no) rows returned\"}",
+        "page": "https://dashboard.scrapegraphai.com/settings/"
+      },
+      {
+        "timestamp": "2026-02-28T19:33:25.018000+00:00",
+        "error_type": "ConsoleError",
+        "message": "\"[getUserUsage] Database error:\" {\"code\":\"PGRST116\",\"details\":\"The result contains 0 rows\",\"hint\":null,\"message\":\"JSON object requested, multiple (or no) rows returned\"}",
+        "page": "https://dashboard.scrapegraphai.com/settings/"
+      },
+      {
+        "timestamp": "2026-02-28T19:33:27.429000+00:00",
+        "error_type": "",
+        "message": "Unknown error",
+        "page": "https://dashboard.scrapegraphai.com/settings/"
+      }
+    ],
+    "network_errors": [],
+    "user_actions": [
+      {
+        "timestamp": "2026-02-28T19:33:23.006000+00:00",
+        "type": "pageleave",
+        "description": "PAGE_LEAVE: /settings/"
+      },
+      {
+        "timestamp": "2026-02-28T19:33:23.239000+00:00",
+        "type": "pageview",
+        "description": "PAGEVIEW: /settings/"
+      }
+    ],
+    "other_events": [],
+    "dom_snapshots": [
+      {
+        "timestamp": "2026-02-28T19:33:23.096000+00:00",
+        "page": "https://dashboard.scrapegraphai.com/",
+        "dom_md": "## Dynamic changes on page\n\n*, ::before, ::after { transition: none !important; }\n*, ::before, ::after { transition: none !important; }"
+      },
+      {
+        "timestamp": "2026-02-28T19:33:24.767000+00:00",
+        "page": "https://dashboard.scrapegraphai.com/settings/",
+        "dom_md": "[ASIDE]\n[LINK: [IMG: ScrapeGraphAI] [HIDDEN:opacity-0] ScrapeGraphAI \u2192 https://dashboard.scrapegraphai.com/] [BUTTON: Default project]\n[NAV]\n[LINK: [BUTTON: Playground] \u2192 https://dashboard.scrapegraphai.com/] [LINK: [BUTTON: Dashboard] \u2192 https://dashboard.scrapegraphai.com/dashboard/] [LINK: [BUTTON: History] \u2192 https://dashboard.scrapegraphai.com/history/] [LINK: [BUTTON: Use Cases] \u2192 https://dashboard.scrapegraphai.com/use-cases/] [LINK: [BUTTON: Billing] \u2192 https://dashboard.scrapegraphai.com/billing/] [LINK: [BUTTON: Agentic Scraper Beta] \u2192 https://dashboard.scrapegraphai.com/agentic-scraper/] [LINK: [BUTTON: Documentation] \u2192 https://docs.scrapegraphai.com/introduction] [LINK: [BUTTON: MCP Server] \u2192 https://docs.scrapegraphai.com/services/mcp-server]\n[/NAV]\n [BUTTON (button): HA samggpv5oaw hallhoffarth@gmail.com] [LINK: [BUTTON: v3.2.1] \u2192 https://dashboard.scrapegraphai.com/changelog/]\n[/ASIDE]\n [MAIN]\n[HIDDEN:opacity-0] # Settings\n\nManage your account preferences and settings ### Profile\nUpdate your personal information SS [BUTTON: Upload Picture] [INPUT type=\"file\"] [LABEL for=\"firstName\"]: First Name [INPUT type=\"text\" name=\"firstName\" placeholder=\"Enter your first name\" value=\"Sam\"] [LABEL for=\"lastName\"]: Last Name [INPUT type=\"text\" name=\"lastName\" placeholder=\"Enter your last name\" value=\"Smith\"] [LABEL for=\"email\"]: Email [INPUT type=\"email\" name=\"email\" value=\"hallhoffarth@gmail.com\"]\nTo change your email, go to the Security section below [LABEL for=\"username\"]: Username [INPUT type=\"text\" name=\"username\" placeholder=\"Choose a unique username\" value=\"samggpv5oaw\"]\nChoose a unique username for your profile [DISABLED] [BUTTON (disabled): Update Profile] ### Security\nManage your account security and password ### Password\n\nUpdate your password to keep your account secure [LINK: [BUTTON: Reset Password] \u2192 https://dashboard.scrapegraphai.com/forgot-password/] ### Email\nChange your account email address [BUTTON (button): Change Email] ### Webhook Secret\nManage your webhook signing secret for verifying webhook payloads ### [BUTTON (button): Advanced settings]\n[/MAIN] [LINK: Book a Call \u2192 https://calendly.com/lorenzo-padoan-scrapegraphai/30min] [BUTTON: Upgrade] [BUTTON: Toggle theme]"
+      }
+    ],
+    "dom_diffs": [
+      {
+        "timestamp": "2026-02-28T19:33:23.096000+00:00",
+        "page": "https://dashboard.scrapegraphai.com/",
+        "is_diff": true,
+        "text": "ADDED:\n  + ## Dynamic changes on page\n  + *, ::before, ::after { transition: none !important; }\n  + *, ::before, ::after { transition: none !important; }\nREMOVED:\n  - [LINK: [BUTTON: Playground] \u2192 https://dashboard.scrapegraphai.com/] [LINK: [BUTTON: Dashboard] \u2192 https://dashboard.scrapegraphai.com/dashboard/] [LINK: [BUTTON: History] \u2192 https://dashboard.scrapegraphai.com/history/] [LINK: [BUTTON: Use Cases] \u2192 https://dashboard.scrapegraphai.com/use-cases/] [LINK: [BUTTON: Billing] \u2192 https://das"
+      },
+      {
+        "timestamp": "2026-02-28T19:33:24.767000+00:00",
+        "page": "https://dashboard.scrapegraphai.com/settings/",
+        "is_diff": false,
+        "text": "[ASIDE]\n[LINK: [IMG: ScrapeGraphAI] [HIDDEN:opacity-0] ScrapeGraphAI \u2192 https://dashboard.scrapegraphai.com/] [BUTTON: Default project]\n[NAV]\n[LINK: [BUTTON: Playground] \u2192 https://dashboard.scrapegraphai.com/] [LINK: [BUTTON: Dashboard] \u2192 https://dashboard.scrapegraphai.com/dashboard/] [LINK: [BUTTON: History] \u2192 https://dashboard.scrapegraphai.com/history/] [LINK: [BUTTON: Use Cases] \u2192 https://dashboard.scrapegraphai.com/use-cases/] [LINK: [BUTTON: Billing] \u2192 https://dashboard.scrapegraphai.com/b"
+      }
+    ],
+    "ai_context_sent": "USER STEPS BEFORE INCIDENT:\n  1. User navigated to /\n  2. User navigated to /login/\n  3. User left /login/\n  4. User navigated to /auth/callback/\n  5. User navigated to /onboarding/\n  6. User navigated to /\n  7. User left /\n  8. User navigated to /\n  9. User navigated to /billing/\n  10. User navigated to /\n  11. User navigated to /settings/\n  12. User left /settings/\n  13. User navigated to /settings/\n\nINCIDENT WINDOW on https://dashboard.scrapegraphai.com/settings/:\n\n  [-0.9s] PAGE_LEAVE: /settings/\n  [-0.7s] PAGEVIEW: /settings/\n  [+0.0s] JS_ERROR: ConsoleError: \"[UsageStore] Database error:\" {\"code\":\"PGRST116\",\"details\":\"The result contains 0 rows\",\"hint\":null,\"message\":\"JSON obj\n  [+0.7s] JS_ERROR: ConsoleError: \"[ProjectsStore] Error fetching projects:\" {\"code\":\"PGRST116\",\"details\":\"The result contains 0 rows\",\"hint\":null,\"messag\n  [+0.9s] JS_ERROR: ConsoleError: \"Uncaught (in promise)\" {\"code\":\"PGRST116\",\"details\":\"The result contains 0 rows\",\"hint\":null,\"message\":\"JSON object req\n  [+1.1s] JS_ERROR: ConsoleError: \"[getUserUsage] Database error:\" {\"code\":\"PGRST116\",\"details\":\"The result contains 0 rows\",\"hint\":null,\"message\":\"JSON o\n  [+3.5s] JS_ERROR: Error: Unknown error\n\nDOM STATE AT INCIDENT:\n[ASIDE]\n[LINK: [IMG: ScrapeGraphAI] [HIDDEN:opacity-0] ScrapeGraphAI \u2192 https://dashboard.scrapegraphai.com/] [BUTTON: Default project]\n[NAV]\n[LINK: [BUTTON: Playground] \u2192 https://dashboard.scrapegraphai.com/] [LINK: [BUTTON: Dashboard] \u2192 https://dashboard.scrapegraphai.com/dashboard/] [LINK: [BUTTON: History] \u2192 https://dashboard.scrapegraphai.com/history/] [LINK: [BUTTON: Use Cases] \u2192 https://dashboard.scrapegraphai.com/use-cases/] [LINK: [BUTTON: Billing] \u2192 https://dashboard.scrapegraphai.com/billing/] [LINK: [BUTTON: Agentic Scraper Beta] \u2192 https://dashboard.scrapegraphai.com/agentic-scraper/] [LINK: [BUTTON: Documentation] \u2192 https://docs.scrapegraphai.com/introduction] [LINK: [BUTTON: MCP Server] \u2192 https://docs.scrapegraphai.com/services/mcp-server]\n[/NAV]\n [BUTTON (button): HA samggpv5oaw hallhoffarth@gmail.com] [LINK: [BUTTON: v3.2.1] \u2192 https://dashboard.scrapegraphai.com/changelog/]\n[/ASIDE]\n [MAIN]\n[HIDDEN:opacity-0] # Settings\n\nManage your account preferences and settings ### Profile\nUpdate your personal information SS [BUTTON: Upload Picture] [INPUT type=\"file\"] [LABEL for=\"firstName\"]: First Name [INPUT type=\"text\" name=\"firstName\" placeholder=\"Enter your first name\" value=\"Sam\"] [LABEL for=\"lastName\"]: Last Name [INPUT type=\"text\" name=\"lastName\" placeholder=\"Enter your last name\" value=\"Smith\"] [LABEL for=\"email\"]: Email [INPUT type=\"email\" name=\"email\" value=\"hallhoffarth@gmail.com\"]\nTo change your email, go to the Security section below [LABEL for=\"username\"]: Username [INPUT type=\"text\" name=\"username\" placeholder=\"Choose a unique username\" value=\"samggpv5oaw\"]\nChoose a unique username for your profile [DISABLED] [BUTTON (disabled): Update Profile] ### Security\nManage your account security and password ### Password\n\nUpdate your password to keep your account secure [LINK: [BUTTON: Reset Password] \u2192 https://dashboard.scrapegraphai.com/forgot-password/] ### Email\nChange your account email address [BUTTON (button): Change Email] ### Webhook Secret\nManage your webhook signing secret for verifying webhook payloads ### [BUTTON (button): Advanced settings]\n[/MAIN] [LINK: Book a Call \u2192 https://calendly.com/lorenzo-padoan-scrapegraphai/30min] [BUTTON: Upgrade] [BUTTON: Toggle theme]\n\nDOM CHANGES IN WINDOW:\nADDED:\n  + ## Dynamic changes on page\n  + *, ::before, ::after { transition: none !important; }\n  + *, ::before, ::after { transition: none !important; }\nREMOVED:\n  - [LINK: [BUTTON: Playground] \u2192 https://dashboard.scrapegraphai.com/] [LINK: [BUTTON: Dashboard] \u2192 https://dashboard.scrapegraphai.com/dashboard/] [LINK: [BUTTON: History] \u2192 https://dashboard.scrapegraphai.com/history/] [LINK: [BUTTON: Use Cases] \u2192 https://dashboard.scrapegraphai.com/use-cases/] [LINK: [BUTTON: Billing] \u2192 https://dashboard.scrapegraphai.com/billing/] [LINK: [BUTTON: Agentic Scraper Beta] \u2192 https://dashboard.scrapegraphai.com/agentic-scraper/] [LINK: [BUTTON: Documentation] \u2192 https://docs.scrapegraphai.com/introduction] [LINK: [BUTTON: MCP Server] \u2192 https://docs.scrapegraphai.com/services/mcp-server]  (was visible for 2.4s)\n  - [/MAIN] [LINK: Book a Call \u2192 https://calendly.com/lorenzo-padoan-scrapegraphai/30min] [BUTTON: Upgrade] [BUTTON: Toggle theme]  (was visible for 2.4s)\n  - [/ASIDE]  (was visible for 2.4s)\n  - [/NAV]  (was visible for 2.4s)\n  - Test and experiment with ScrapeGraphAI API endpoints API Key: \u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022\u2022 Remaining credits: 30 / 50 [BUTTON (button): Smart Smart Scraper] [BUTTON (button): Search Search Scraper] [BUTTON (button): Markdown Markdownify] [BUTTON (button): Scrape Scrape] [BUTTON (button): Crawler Smart Crawler] [BUTTON (button): Sitemap Sitemap] Extract structured data from a single webpage  (was visible for 2.4s)\n  - [BUTTON (button): HA samggpv5oaw hallhoffarth@gmail.com] [LINK: [BUTTON: v3.2.1] \u2192 https://dashboard.scrapegraphai.com/changelog/]  (was visible for 2.4s)\n  - [ASIDE]  (was visible for 2.4s)\n  - [NAV]  (was visible for 2.4s)\n  - [MAIN]  (was visible for 2.4s)\n  - cost: 10 credits [TEXTAREA placeholder=\"https://example.com, https://example2.com, https://example3.com\"] [TEXTAREA placeholder=\"Describe what you want to extract...\"] [BUTTON: Advanced Options] [BUTTON: Get code] [BUTTON: Create Schema] [BUTTON: Start scraping \u2318 + Enter]  (was \n... (truncated)\n"
+  },
+  {
+    "cluster_id": "cluster_019ca5a3_5",
+    "cluster_type": "console_error",
+    "center_ts": "2026-02-28T19:34:02.844000+00:00",
+    "page_url": "https://dashboard.scrapegraphai.com/settings/",
+    "trigger_count": 2,
+    "event_count": 2,
+    "dom_snapshot_count": 1,
+    "dom_diff_count": 0,
+    "console_logs": [
+      {
+        "timestamp": "2026-02-28T19:34:02.844000+00:00",
+        "error_type": "ConsoleError",
+        "message": "\"Error deleting account:\" \"Error: Request failed\\n    at https://dashboard.scrapegraphai.com/_next/static/chunks/1024-9cc76d24f3729b9b.js:1:2441\\n    at async tn.request (https://dashboard.scrapegraphai.com/_next/static/chunks/8655-3b427166988a955e.js:1:29732)\\n    at async l (https://dashboard.scra",
+        "page": "https://dashboard.scrapegraphai.com/settings/"
+      },
+      {
+        "timestamp": "2026-02-28T19:34:02.844000+00:00",
+        "error_type": "ConsoleError",
+        "message": "\"Delete account failed:\" \"Error: Request failed\\n    at https://dashboard.scrapegraphai.com/_next/static/chunks/1024-9cc76d24f3729b9b.js:1:2441\\n    at async tn.request (https://dashboard.scrapegraphai.com/_next/static/chunks/8655-3b427166988a955e.js:1:29732)\\n    at async l (https://dashboard.scrap",
+        "page": "https://dashboard.scrapegraphai.com/settings/"
+      }
+    ],
+    "network_errors": [],
+    "user_actions": [],
+    "other_events": [],
+    "dom_snapshots": [
+      {
+        "timestamp": "2026-02-28T19:33:24.767000+00:00",
+        "page": "https://dashboard.scrapegraphai.com/settings/",
+        "dom_md": "[ASIDE]\n[LINK: [IMG: ScrapeGraphAI] [HIDDEN:opacity-0] ScrapeGraphAI \u2192 https://dashboard.scrapegraphai.com/] [BUTTON: Default project]\n[NAV]\n[LINK: [BUTTON: Playground] \u2192 https://dashboard.scrapegraphai.com/] [LINK: [BUTTON: Dashboard] \u2192 https://dashboard.scrapegraphai.com/dashboard/] [LINK: [BUTTON: History] \u2192 https://dashboard.scrapegraphai.com/history/] [LINK: [BUTTON: Use Cases] \u2192 https://dashboard.scrapegraphai.com/use-cases/] [LINK: [BUTTON: Billing] \u2192 https://dashboard.scrapegraphai.com/billing/] [LINK: [BUTTON: Agentic Scraper Beta] \u2192 https://dashboard.scrapegraphai.com/agentic-scraper/] [LINK: [BUTTON: Documentation] \u2192 https://docs.scrapegraphai.com/introduction] [LINK: [BUTTON: MCP Server] \u2192 https://docs.scrapegraphai.com/services/mcp-server]\n[/NAV]\n [BUTTON (button): HA samggpv5oaw hallhoffarth@gmail.com] [LINK: [BUTTON: v3.2.1] \u2192 https://dashboard.scrapegraphai.com/changelog/]\n[/ASIDE]\n [MAIN]\n[HIDDEN:opacity-0] # Settings\n\nManage your account preferences and settings ### Profile\nUpdate your personal information SS [BUTTON: Upload Picture] [INPUT type=\"file\"] [LABEL for=\"firstName\"]: First Name [INPUT type=\"text\" name=\"firstName\" placeholder=\"Enter your first name\" value=\"Sam\"] [LABEL for=\"lastName\"]: Last Name [INPUT type=\"text\" name=\"lastName\" placeholder=\"Enter your last name\" value=\"Smith\"] [LABEL for=\"email\"]: Email [INPUT type=\"email\" name=\"email\" value=\"hallhoffarth@gmail.com\"]\nTo change your email, go to the Security section below [LABEL for=\"username\"]: Username [INPUT type=\"text\" name=\"username\" placeholder=\"Choose a unique username\" value=\"samggpv5oaw\"]\nChoose a unique username for your profile [DISABLED] [BUTTON (disabled): Update Profile] ### Security\nManage your account security and password ### Password\n\nUpdate your password to keep your account secure [LINK: [BUTTON: Reset Password] \u2192 https://dashboard.scrapegraphai.com/forgot-password/] ### Email\nChange your account email address [BUTTON (button): Change Email] ### Webhook Secret\nManage your webhook signing secret for verifying webhook payloads ### [BUTTON (button): Advanced settings]\n[/MAIN] [LINK: Book a Call \u2192 https://calendly.com/lorenzo-padoan-scrapegraphai/30min] [BUTTON: Upgrade] [BUTTON: Toggle theme]"
+      }
+    ],
+    "dom_diffs": [],
+    "ai_context_sent": "USER STEPS BEFORE INCIDENT:\n  1. User navigated to /\n  2. User navigated to /login/\n  3. User left /login/\n  4. User navigated to /auth/callback/\n  5. User navigated to /onboarding/\n  6. User navigated to /\n  7. User left /\n  8. User navigated to /\n  9. User navigated to /billing/\n  10. User navigated to /\n  11. User navigated to /settings/\n  12. User left /settings/\n  13. User navigated to /settings/\n\nINCIDENT WINDOW on https://dashboard.scrapegraphai.com/settings/:\n\n  [+0.0s] JS_ERROR: ConsoleError: \"Error deleting account:\" \"Error: Request failed\\n    at https://dashboard.scrapegraphai.com/_next/static/chunks/1024-9c\n  [+0.0s] JS_ERROR: ConsoleError: \"Delete account failed:\" \"Error: Request failed\\n    at https://dashboard.scrapegraphai.com/_next/static/chunks/1024-9cc\n\nDOM STATE (nearest snapshot, ~38.1s from incident):\n[ASIDE]\n[LINK: [IMG: ScrapeGraphAI] [HIDDEN:opacity-0] ScrapeGraphAI \u2192 https://dashboard.scrapegraphai.com/] [BUTTON: Default project]\n[NAV]\n[LINK: [BUTTON: Playground] \u2192 https://dashboard.scrapegraphai.com/] [LINK: [BUTTON: Dashboard] \u2192 https://dashboard.scrapegraphai.com/dashboard/] [LINK: [BUTTON: History] \u2192 https://dashboard.scrapegraphai.com/history/] [LINK: [BUTTON: Use Cases] \u2192 https://dashboard.scrapegraphai.com/use-cases/] [LINK: [BUTTON: Billing] \u2192 https://dashboard.scrapegraphai.com/billing/] [LINK: [BUTTON: Agentic Scraper Beta] \u2192 https://dashboard.scrapegraphai.com/agentic-scraper/] [LINK: [BUTTON: Documentation] \u2192 https://docs.scrapegraphai.com/introduction] [LINK: [BUTTON: MCP Server] \u2192 https://docs.scrapegraphai.com/services/mcp-server]\n[/NAV]\n [BUTTON (button): HA samggpv5oaw hallhoffarth@gmail.com] [LINK: [BUTTON: v3.2.1] \u2192 https://dashboard.scrapegraphai.com/changelog/]\n[/ASIDE]\n [MAIN]\n[HIDDEN:opacity-0] # Settings\n\nManage your account preferences and settings ### Profile\nUpdate your personal information SS [BUTTON: Upload Picture] [INPUT type=\"file\"] [LABEL for=\"firstName\"]: First Name [INPUT type=\"text\" name=\"firstName\" placeholder=\"Enter your first name\" value=\"Sam\"] [LABEL for=\"lastName\"]: Last Name [INPUT type=\"text\" name=\"lastName\" placeholder=\"Enter your last name\" value=\"Smith\"] [LABEL for=\"email\"]: Email [INPUT type=\"email\" name=\"email\" value=\"hallhoffarth@gmail.com\"]\nTo change your email, go to the Security section below [LABEL for=\"username\"]: Username [INPUT type=\"text\" name=\"username\" placeholder=\"Choose a unique username\" value=\"samggpv5oaw\"]\nChoose a unique username for your profile [DISABLED] [BUTTON (disabled): Update Profile] ### Security\nManage your account security and password ### Password\n\nUpdate your password to keep your account secure [LINK: [BUTTON: Reset Password] \u2192 https://dashboard.scrapegraphai.com/forgot-password/] ### Email\nChange your account email address [BUTTON (button): Change Email] ### Webhook Secret\nManage your webhook signing secret for verifying webhook payloads ### [BUTTON (button): Advanced settings]\n[/MAIN] [LINK: Book a Call \u2192 https://calendly.com/lorenzo-padoan-scrapegraphai/30min] [BUTTON: Upgrade] [BUTTON: Toggle theme]\n"
+  },
+  {
+    "cluster_id": "cluster_019ca5a3_6",
+    "cluster_type": "console_error",
+    "center_ts": "2026-02-28T19:34:19.837000+00:00",
+    "page_url": "https://dashboard.scrapegraphai.com/settings/",
+    "trigger_count": 2,
+    "event_count": 3,
+    "dom_snapshot_count": 1,
+    "dom_diff_count": 0,
+    "console_logs": [
+      {
+        "timestamp": "2026-02-28T19:34:19.837000+00:00",
+        "error_type": "ConsoleError",
+        "message": "\"Error deleting account:\" \"Error: Request failed\\n    at https://dashboard.scrapegraphai.com/_next/static/chunks/1024-9cc76d24f3729b9b.js:1:2441\\n    at async tn.request (https://dashboard.scrapegraphai.com/_next/static/chunks/8655-3b427166988a955e.js:1:29732)\\n    at async l (https://dashboard.scra",
+        "page": "https://dashboard.scrapegraphai.com/settings/"
+      },
+      {
+        "timestamp": "2026-02-28T19:34:19.837000+00:00",
+        "error_type": "ConsoleError",
+        "message": "\"Delete account failed:\" \"Error: Request failed\\n    at https://dashboard.scrapegraphai.com/_next/static/chunks/1024-9cc76d24f3729b9b.js:1:2441\\n    at async tn.request (https://dashboard.scrapegraphai.com/_next/static/chunks/8655-3b427166988a955e.js:1:29732)\\n    at async l (https://dashboard.scrap",
+        "page": "https://dashboard.scrapegraphai.com/settings/"
+      }
+    ],
+    "network_errors": [],
+    "user_actions": [
+      {
+        "timestamp": "2026-02-28T19:34:28.364000+00:00",
+        "type": "pageleave",
+        "description": "PAGE_LEAVE: /settings/"
+      }
+    ],
+    "other_events": [],
+    "dom_snapshots": [
+      {
+        "timestamp": "2026-02-28T19:33:24.767000+00:00",
+        "page": "https://dashboard.scrapegraphai.com/settings/",
+        "dom_md": "[ASIDE]\n[LINK: [IMG: ScrapeGraphAI] [HIDDEN:opacity-0] ScrapeGraphAI \u2192 https://dashboard.scrapegraphai.com/] [BUTTON: Default project]\n[NAV]\n[LINK: [BUTTON: Playground] \u2192 https://dashboard.scrapegraphai.com/] [LINK: [BUTTON: Dashboard] \u2192 https://dashboard.scrapegraphai.com/dashboard/] [LINK: [BUTTON: History] \u2192 https://dashboard.scrapegraphai.com/history/] [LINK: [BUTTON: Use Cases] \u2192 https://dashboard.scrapegraphai.com/use-cases/] [LINK: [BUTTON: Billing] \u2192 https://dashboard.scrapegraphai.com/billing/] [LINK: [BUTTON: Agentic Scraper Beta] \u2192 https://dashboard.scrapegraphai.com/agentic-scraper/] [LINK: [BUTTON: Documentation] \u2192 https://docs.scrapegraphai.com/introduction] [LINK: [BUTTON: MCP Server] \u2192 https://docs.scrapegraphai.com/services/mcp-server]\n[/NAV]\n [BUTTON (button): HA samggpv5oaw hallhoffarth@gmail.com] [LINK: [BUTTON: v3.2.1] \u2192 https://dashboard.scrapegraphai.com/changelog/]\n[/ASIDE]\n [MAIN]\n[HIDDEN:opacity-0] # Settings\n\nManage your account preferences and settings ### Profile\nUpdate your personal information SS [BUTTON: Upload Picture] [INPUT type=\"file\"] [LABEL for=\"firstName\"]: First Name [INPUT type=\"text\" name=\"firstName\" placeholder=\"Enter your first name\" value=\"Sam\"] [LABEL for=\"lastName\"]: Last Name [INPUT type=\"text\" name=\"lastName\" placeholder=\"Enter your last name\" value=\"Smith\"] [LABEL for=\"email\"]: Email [INPUT type=\"email\" name=\"email\" value=\"hallhoffarth@gmail.com\"]\nTo change your email, go to the Security section below [LABEL for=\"username\"]: Username [INPUT type=\"text\" name=\"username\" placeholder=\"Choose a unique username\" value=\"samggpv5oaw\"]\nChoose a unique username for your profile [DISABLED] [BUTTON (disabled): Update Profile] ### Security\nManage your account security and password ### Password\n\nUpdate your password to keep your account secure [LINK: [BUTTON: Reset Password] \u2192 https://dashboard.scrapegraphai.com/forgot-password/] ### Email\nChange your account email address [BUTTON (button): Change Email] ### Webhook Secret\nManage your webhook signing secret for verifying webhook payloads ### [BUTTON (button): Advanced settings]\n[/MAIN] [LINK: Book a Call \u2192 https://calendly.com/lorenzo-padoan-scrapegraphai/30min] [BUTTON: Upgrade] [BUTTON: Toggle theme]"
+      }
+    ],
+    "dom_diffs": [],
+    "ai_context_sent": "USER STEPS BEFORE INCIDENT:\n  1. User navigated to /\n  2. User navigated to /login/\n  3. User left /login/\n  4. User navigated to /auth/callback/\n  5. User navigated to /onboarding/\n  6. User navigated to /\n  7. User left /\n  8. User navigated to /\n  9. User navigated to /billing/\n  10. User navigated to /\n  11. User navigated to /settings/\n  12. User left /settings/\n  13. User navigated to /settings/\n\nINCIDENT WINDOW on https://dashboard.scrapegraphai.com/settings/:\n\n  [+0.0s] JS_ERROR: ConsoleError: \"Error deleting account:\" \"Error: Request failed\\n    at https://dashboard.scrapegraphai.com/_next/static/chunks/1024-9c\n  [+0.0s] JS_ERROR: ConsoleError: \"Delete account failed:\" \"Error: Request failed\\n    at https://dashboard.scrapegraphai.com/_next/static/chunks/1024-9cc\n  [+8.5s] PAGE_LEAVE: /settings/\n\nDOM STATE (nearest snapshot, ~55.1s from incident):\n[ASIDE]\n[LINK: [IMG: ScrapeGraphAI] [HIDDEN:opacity-0] ScrapeGraphAI \u2192 https://dashboard.scrapegraphai.com/] [BUTTON: Default project]\n[NAV]\n[LINK: [BUTTON: Playground] \u2192 https://dashboard.scrapegraphai.com/] [LINK: [BUTTON: Dashboard] \u2192 https://dashboard.scrapegraphai.com/dashboard/] [LINK: [BUTTON: History] \u2192 https://dashboard.scrapegraphai.com/history/] [LINK: [BUTTON: Use Cases] \u2192 https://dashboard.scrapegraphai.com/use-cases/] [LINK: [BUTTON: Billing] \u2192 https://dashboard.scrapegraphai.com/billing/] [LINK: [BUTTON: Agentic Scraper Beta] \u2192 https://dashboard.scrapegraphai.com/agentic-scraper/] [LINK: [BUTTON: Documentation] \u2192 https://docs.scrapegraphai.com/introduction] [LINK: [BUTTON: MCP Server] \u2192 https://docs.scrapegraphai.com/services/mcp-server]\n[/NAV]\n [BUTTON (button): HA samggpv5oaw hallhoffarth@gmail.com] [LINK: [BUTTON: v3.2.1] \u2192 https://dashboard.scrapegraphai.com/changelog/]\n[/ASIDE]\n [MAIN]\n[HIDDEN:opacity-0] # Settings\n\nManage your account preferences and settings ### Profile\nUpdate your personal information SS [BUTTON: Upload Picture] [INPUT type=\"file\"] [LABEL for=\"firstName\"]: First Name [INPUT type=\"text\" name=\"firstName\" placeholder=\"Enter your first name\" value=\"Sam\"] [LABEL for=\"lastName\"]: Last Name [INPUT type=\"text\" name=\"lastName\" placeholder=\"Enter your last name\" value=\"Smith\"] [LABEL for=\"email\"]: Email [INPUT type=\"email\" name=\"email\" value=\"hallhoffarth@gmail.com\"]\nTo change your email, go to the Security section below [LABEL for=\"username\"]: Username [INPUT type=\"text\" name=\"username\" placeholder=\"Choose a unique username\" value=\"samggpv5oaw\"]\nChoose a unique username for your profile [DISABLED] [BUTTON (disabled): Update Profile] ### Security\nManage your account security and password ### Password\n\nUpdate your password to keep your account secure [LINK: [BUTTON: Reset Password] \u2192 https://dashboard.scrapegraphai.com/forgot-password/] ### Email\nChange your account email address [BUTTON (button): Change Email] ### Webhook Secret\nManage your webhook signing secret for verifying webhook payloads ### [BUTTON (button): Advanced settings]\n[/MAIN] [LINK: Book a Call \u2192 https://calendly.com/lorenzo-padoan-scrapegraphai/30min] [BUTTON: Upgrade] [BUTTON: Toggle theme]\n"
+  }
+]
