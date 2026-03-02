@@ -75,7 +75,7 @@ aws ecr get-login-password --profile "$PROFILE" --region "$REGION" \
     | docker login --username AWS --password-stdin "$ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com"
 
 echo "[3/8] Building Docker image..."
-docker build -t "$ECR_REPO:$IMAGE_TAG" "$PROJECT_ROOT/backend"
+docker build --platform linux/amd64 -t "$ECR_REPO:$IMAGE_TAG" "$PROJECT_ROOT/backend"
 
 echo "[3/8] Pushing image to ECR..."
 docker tag "$ECR_REPO:$IMAGE_TAG" "$ECR_URI:$IMAGE_TAG"
