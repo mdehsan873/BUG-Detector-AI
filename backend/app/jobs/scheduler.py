@@ -59,11 +59,20 @@ async def _run_analysis_for_project(project: dict) -> None:
         logger.error(f"Cannot decrypt API key for project {project_id}: {e}")
         return
 
+    # Debug: log key prefix to verify decryption works correctly in production
+    key_preview = api_key[:8] if len(api_key) > 8 else "???"
+    host = project.get("provider_host", "")
+    proj_ext_id = project.get("provider_project_id", "")
+    logger.info(
+        f"Scheduler: project {project_id} — key starts with '{key_preview}...', "
+        f"host={host}, ext_project={proj_ext_id}"
+    )
+
     connector = get_connector(
         provider=provider,
         api_key=api_key,
-        project_id=project.get("provider_project_id", ""),
-        host=project.get("provider_host", ""),
+        project_id=proj_ext_id,
+        host=host,
     )
 
     since = datetime.now(timezone.utc) - timedelta(hours=24)

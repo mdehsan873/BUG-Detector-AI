@@ -336,11 +336,21 @@ async def _run_analysis_background(analysis_id: str, project: dict):
     try:
         provider = project.get("session_provider", "posthog")
         api_key = decrypt_token(project["provider_api_key"])
+
+        # Debug: log key prefix to verify decryption in production
+        key_preview = api_key[:8] if len(api_key) > 8 else "???"
+        host_val = project.get("provider_host", "")
+        proj_ext_id = project.get("provider_project_id", "")
+        logger.info(
+            f"Analyze: key starts with '{key_preview}...', "
+            f"host={host_val}, ext_project={proj_ext_id}"
+        )
+
         connector = get_connector(
             provider=provider,
             api_key=api_key,
-            project_id=project.get("provider_project_id", ""),
-            host=project.get("provider_host", ""),
+            project_id=proj_ext_id,
+            host=host_val,
         )
         since = datetime.now(timezone.utc) - timedelta(hours=24)
 
