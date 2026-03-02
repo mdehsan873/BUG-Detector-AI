@@ -8,7 +8,7 @@
 set -euo pipefail
 
 PROFILE="buglyft"
-REGION=$(aws configure get region --profile "$PROFILE" 2>/dev/null || echo "ap-south-1")
+REGION=$(aws configure get region --profile "$PROFILE" 2>/dev/null || echo "us-east-1")
 ACCOUNT_ID=$(aws sts get-caller-identity --profile "$PROFILE" --query Account --output text)
 
 ECR_REPO="buglyft-backend"

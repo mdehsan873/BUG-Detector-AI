@@ -11,7 +11,7 @@
 set -euo pipefail
 
 PROFILE="buglyft"
-REGION="${AWS_REGION:-ap-south-1}"   # Change default region if needed
+REGION="${AWS_REGION:-us-east-1}"
 
 echo "──────────────────────────────────────"
 echo " Buglyft — AWS CLI Profile Setup"

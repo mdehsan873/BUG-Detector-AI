@@ -13,7 +13,7 @@
 set -euo pipefail
 
 PROFILE="buglyft"
-REGION=$(aws configure get region --profile "$PROFILE" 2>/dev/null || echo "ap-south-1")
+REGION=$(aws configure get region --profile "$PROFILE" 2>/dev/null || echo "us-east-1")
 
 APP_NAME="buglyft-frontend"
 

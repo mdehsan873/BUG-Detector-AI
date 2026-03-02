@@ -215,7 +215,7 @@ export default function LandingPage() {
       <footer className="border-t border-slate-200 py-8 bg-slate-50/50">
         <div className="max-w-6xl mx-auto px-6 flex items-center justify-between text-sm text-slate-400">
           <span className="font-medium text-slate-500">Buglyft</span>
-          <span>Built with PostHog, OpenAI & GitHub</span>
+          <span>Built By RowTidy</span>
         </div>
       </footer>
     </div>
