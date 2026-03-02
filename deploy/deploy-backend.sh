@@ -149,6 +149,7 @@ fi
 echo "[7/8] Registering task definition..."
 
 SITE_URL_VAL="${SITE_URL:-http://localhost:3000}"
+CORS_ORIGINS_VAL="${CORS_ORIGINS:-http://localhost:3000,https://main.dmmdetom9xhhv.amplifyapp.com,https://buglyft.com,https://www.buglyft.com}"
 
 TASK_DEF=$(cat <<TASKEOF
 {
@@ -172,7 +173,8 @@ TASK_DEF=$(cat <<TASKEOF
             {"name": "SUPABASE_KEY",    "value": "$SUPABASE_KEY"},
             {"name": "ENCRYPTION_KEY",  "value": "$ENCRYPTION_KEY"},
             {"name": "OPENAI_API_KEY",  "value": "$OPENAI_API_KEY"},
-            {"name": "SITE_URL",        "value": "$SITE_URL_VAL"}
+            {"name": "SITE_URL",        "value": "$SITE_URL_VAL"},
+            {"name": "CORS_ORIGINS",    "value": "$CORS_ORIGINS_VAL"}
         ],
         "logConfiguration": {
             "logDriver": "awslogs",

@@ -29,7 +29,7 @@ class Settings(BaseSettings):
     confusing_flow_drop_threshold: float = 0.5  # 50%+ drop-off at a step = confusing
     confidence_threshold: float = 0.75
     log_level: str = "INFO"
-    cors_origins: str = "http://localhost:3000"
+    cors_origins: str = "http://localhost:3000,https://main.dmmdetom9xhhv.amplifyapp.com,https://buglyft.com,https://www.buglyft.com"
 
     # SMTP (email notifications)
     smtp_host: str = ""
